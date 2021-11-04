@@ -1,0 +1,329 @@
+/* ================= General ================= */
+
+
+/* ----------------- Fonts ----------------- */
+
+/* Fonts: Graphik, TiemposHeadline, Theinhardt  */
+
+@font-face {
+    font-family: 'TiemposHeadline-Semibold';
+    src: url("../font/TiemposHeadline-Semibold.woff");
+}
+@font-face {
+    font-family: 'Theinhardt-Lt';
+    src: url("../font/Theinhardt-Lt.woff");
+}
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url("../font/Graphik-Regular.woff");
+}
+@font-face {
+    font-family: 'Graphik-Medium';
+    src: url("../font/Graphik-Medium.ttf");
+}
+
+/* ----------------- Colors ----------------- */
+
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 1425px;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: 'TiemposHeadline-Semibold'; 
+    position: absolute;
+    left: 44%;
+    font-size: 2.8rem; 
+}
+
+h3 {
+    font-family: 'TiemposHeadline-Semibold'; 
+    font-size: 5.2rem; 
+    color: #27282A
+}
+
+h4 {
+    font-size: 2.4rem; 
+    font-family: 'Graphik-Medium';
+    padding-bottom: 3vh;
+}
+
+p {
+    font-family: 'Theinhardt-Lt';
+}
+
+.p1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Graphik-Medium';
+    color: #2B2C2E;
+}
+
+.p2 {
+    font-size: 6.6rem;
+    font-weight: 600;
+    font-family: 'Theinhardt-Lt';
+    color: #2B2C2E;
+}
+
+.p3 {
+    font-size: 1.8rem; 
+    font-weight: 100;
+    color: #9FA2A7;
+    font-family: 'Graphik-Regular'; 
+}
+
+.p4 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-bottom: 3vh;
+    color: #3D3E41;
+}
+
+.p5 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #3D3E41;
+    font-family: 'Theinhardt-Lt';
+}
+
+.p6 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #848689;
+    font-family: 'Theinhardt-Lt';
+    line-height: 3rem;
+}
+
+.button {
+    font-family: 'Graphik-Medium';
+    font-size: 14rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ================= HEADER ================= */
+
+header nav {
+    font-family: Graphik-Regular;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 6vw 0vh 6vw;
+}
+
+header nav ul{
+    list-style: none;
+    display:flex;
+}
+
+header nav ul li{
+    padding: 0 5px 0 15px;
+    font-size: 1.4rem; 
+}
+
+.hamburger {
+    display:none;
+}
+
+.hamburger span{
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 5px 40px 5px 0;
+    background-color: black;
+}
+
+header article {
+    background-image: url(../img/home_hero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 12vh;
+    padding-top: 3vh;
+    padding-bottom: 90vh;
+}
+
+header h2 {
+    font-family: 'Graphik-Regular'; 
+    text-align: center;
+    font-size: 4rem; 
+    font-weight: 150;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    margin: 0 12rem;
+}
+
+/* ----------------- Section 1 ----------------- */
+
+main section:nth-of-type(1) {
+    display: flex;
+    padding-bottom: 28vh;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1) {
+    width: 63%;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) {
+    width: 25%;
+    padding-left: 5vw;
+}
+
+/* ----------------- Section 2 ----------------- */
+
+main section:nth-of-type(2) {
+    display: flex;
+    padding-bottom: 15vh;
+}
+
+main section:nth-of-type(2) h3 {
+    padding-bottom: 8vh;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) {
+    width: 45%;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) img {
+    width: 38vw;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) {
+    width: 50%;
+    margin-left: auto;
+}
+
+/* ----------------- Section 3 ----------------- */
+
+main section:nth-of-type(3) {
+    background: #9FA2A7;
+    display: flex;
+    padding: 4vh 0 3vh 0;
+} 
+
+main section:nth-of-type(3) article:nth-of-type(1) {
+    width: 45%;
+    padding-left: 4vw;
+}
+main section:nth-of-type(3) article:nth-of-type(1) h3 { 
+    padding: 4vh 0 2.4vh 0;
+}
+main section:nth-of-type(3) article:nth-of-type(1) ol {
+    padding-left: 2.5vw;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #3D3E41;
+    font-family: 'Theinhardt-Lt';
+}
+main section:nth-of-type(3) article:nth-of-type(2) {
+    width: 50%;
+    margin-left: auto;
+}
+
+main section:nth-of-type(3) article:nth-of-type(2) img {
+    width: 38vw;
+}
+
+/* ----------------- Section 4 ----------------- */
+
+main section:nth-of-type(4){
+    border-bottom: 1px solid black;
+    padding-top: 18vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(1) h3 { 
+    padding-bottom: 6vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(1){
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 18vh;
+}
+
+.twentyeight {
+    background: url(../img/28.png);
+    width: 100%;
+    height: 40vh;
+    background-repeat: cover no-repeat;
+}
+
+
+main section:nth-of-type(4) article:nth-of-type(2) {
+    display: flex;
+    margin-top: -18vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) div:nth-of-type(1) {
+    width: 50%;
+    padding-left: 14vw;
+    padding-top: 16vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) div:nth-of-type(2) {
+    margin-left: auto;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) img {
+    width: 40vw;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) div:nth-of-type(2) {
+    padding: 10vh 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align:center;
+    padding: 12vh 0 6vh 0;
+}
+
+footer article {
+    display: flex;
+    justify-content: center;
+}
+
+footer h3 {
+    padding-bottom: 5vh;
+}
+
+footer p {
+    padding-top: 18vh;
+}
+footer article img {
+    width: 7vw;
+}
+
+/* ================= Media Queries ================= */
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    header nav ul {
+        display:none;
+    }
+
+    main section {
+        display: block;
+        text-align: center;
+    }
+
+
+}
